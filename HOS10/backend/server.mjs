@@ -22,7 +22,7 @@ passport.use(
       clientID: FACEBOOK_APP_ID,
       clientSecret: FACEBOOK_APP_SECRET,
       // Your callback URL
-      callbackURL: 'http://localhost:5050/facebook/callback', 
+      callbackURL: 'https://bug-free-space-system-x76w4vwwwqpfv756-5050.app.github.dev/facebook/callback', 
       // Fields you want to access from the user's Facebook profile
       profileFields: ['id', 'displayName', 'email'], 
     },
@@ -57,9 +57,9 @@ app.use(passport.session());
 app.get('/facebook', passport.authenticate('facebook'));
 app.get('/facebook/callback', passport.authenticate('facebook', {
   // Redirect to the main page upon successful login.
-  successRedirect: 'http://localhost:3000/home', 
+  successRedirect: 'https://bug-free-space-system-x76w4vwwwqpfv756-3000.app.github.dev/home', 
   // Redirect to login page on authentication failure.
-  failureRedirect: 'http://localhost:3000/', 
+  failureRedirect: 'https://bug-free-space-system-x76w4vwwwqpfv756-3000.app.github.dev', 
 }));
 
 // start the Express server
