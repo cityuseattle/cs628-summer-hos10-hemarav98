@@ -13,8 +13,8 @@ const FacebookStrategy = passportFacebook.Strategy;
 // When you make a Facebook App, that app will have an App ID and an App Secret. 
 // With the App ID, you can send several requests to Facebook for data. 
 // The Facebook App Secret will be used to decode the encrypted messages from Facebook, so that sensitive information remains protected.
-const FACEBOOK_APP_ID = 'yourID';
-const FACEBOOK_APP_SECRET = 'yourSecret';
+const FACEBOOK_APP_ID = '1000675224508741';
+const FACEBOOK_APP_SECRET = '7cc23079af1e71031506757c0207a6a3';
 
 passport.use(
   new FacebookStrategy(
